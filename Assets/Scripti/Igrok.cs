@@ -7,37 +7,36 @@ public class Igrok : MonoBehaviour
     public int points;
 
     public SharikStrelyaushi projectilePrefab;
-
-    public float shootInterval;
-    public float shootTimer;
-
     public Transform shootPoint;
+
+    public float shootInterval = 0.3f;
+    private float shootTimer = 0f;
 
     void Update()
     {
         Move();
-
-        shootTimer -= Time.deltaTime;
-
         Shoot();
-    }
-
-    void Shoot()
-    {
-        if (shootTimer <= 0)
-        {
-            Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
-            shootTimer = shootInterval;
-        }
     }
 
     void Move()
     {
-        if (Input.GetMouseButton(0))
+        // Движение за мышью БЕЗ нажатия кнопки (если хочешь только при нажатии — добавь if)
+        Vector2 mousePos = Input.mousePosition;
+        Vector3 realPos = Camera.main.ScreenToWorldPoint(mousePos);
+        transform.position = new Vector3(realPos.x, realPos.y, 0f);
+    }
+
+    void Shoot()
+    {
+        shootTimer -= Time.deltaTime;
+
+        if (shootTimer <= 0f)
         {
-            Vector2 mousePos = Input.mousePosition;
-            Vector2 realPos = Camera.main.ScreenToWorldPoint(mousePos);
-            transform.position = realPos;
+            if (projectilePrefab != null && shootPoint != null)
+            {
+                Instantiate(projectilePrefab, shootPoint.position, Quaternion.identity);
+            }
+            shootTimer = shootInterval;
         }
     }
 }

@@ -10,19 +10,25 @@ public class UI : MonoBehaviour
     public TextMeshProUGUI pointsText;
     public GameObject defeatUI;
 
+    void Start()
+    {
+        if (defeatUI != null) defeatUI.SetActive(false);
+    }
+
     void Update()
     {
-        pointsText.text = player.points.ToString();
-
-        if (player == null)
+        if (player != null && player.gameObject.activeSelf)
         {
-            defeatUI.SetActive(true);
+            pointsText.text = player.points.ToString();
+        }
+        else
+        {
+            if (defeatUI != null) defeatUI.SetActive(true);
         }
     }
 
     public void OnClickRestart()
     {
-
         int index = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(index);
     }

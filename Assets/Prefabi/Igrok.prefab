@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 21590739965146386}
   - component: {fileID: 4293687069761362527}
   - component: {fileID: 8997149926330863964}
+  - component: {fileID: 2113464044000295748}
   m_Layer: 0
   m_Name: Igrok
   m_TagString: Player
@@ -65,7 +66,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -84,9 +85,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Igrok
   points: 0
-  shootInterval: 0
-  shootTimer: 0
+  projectilePrefab: {fileID: 0}
   shootPoint: {fileID: 0}
+  shootInterval: 0
+--- !u!50 &2113464044000295748
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018008768815070237}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5769883011778390242
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +140,7 @@ Transform:
   m_GameObject: {fileID: 5769883011778390242}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.37, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []

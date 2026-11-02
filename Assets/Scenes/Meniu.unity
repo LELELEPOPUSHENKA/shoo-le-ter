@@ -247,7 +247,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.31132078, g: 0, b: 0.0033212565, a: 0}
+  m_BackGroundColor: {r: 0.05887327, g: 0.05887327, b: 0.46226418, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -314,6 +314,30 @@ PrefabInstance:
     - target: {fileID: 6553052231898576584, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553052232223107990, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553052232223107990, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 523709508}
+    - target: {fileID: 6553052232223107990, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553052232223107990, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553052232223107990, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeniuUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553052232223107990, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6553052232687869607, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -406,6 +430,18 @@ PrefabInstance:
     - target: {fileID: 6553052233090775412, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553052233196275484, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 523709508}
+    - target: {fileID: 6553052233196275484, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553052233196275484, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeniuUI, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6553052233090775374, guid: 8b836ade148e642a096eeadaa8ea4d48, type: 3}

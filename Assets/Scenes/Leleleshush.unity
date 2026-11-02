@@ -152,7 +152,7 @@ MonoBehaviour:
   borderRight: {fileID: 974976856}
   borderLeft: {fileID: 1664885461}
   spawnInterval: 2.5
-  spawnHeightY: 5
+  spawnTimer: 0
 --- !u!4 &66298099
 Transform:
   m_ObjectHideFlags: 0
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI
   player: {fileID: 1683893768}
   pointsText: {fileID: 1612852740}
-  defeatUI: {fileID: 1612852738}
+  defeatUI: {fileID: 0}
 --- !u!1 &786705494
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +860,7 @@ MonoBehaviour:
   borderRight: {fileID: 2117293597}
   borderLeft: {fileID: 570360005}
   spawnInterval: 1.5
-  spawnHeightY: 7
+  spawnTimer: 0
 --- !u!4 &1681952232
 Transform:
   m_ObjectHideFlags: 0
